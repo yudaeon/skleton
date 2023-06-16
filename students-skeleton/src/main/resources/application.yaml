@@ -4,11 +4,12 @@ spring:
     driver-class-name: org.sqlite.JDBC
   jpa:
     hibernate:
-      ddl-auto: create  # 완성 후 update로 변경
-    show-sql: true
+      ddl-auto: update  # 완성 후 update로 변경
+    show-sql: false
     database-platform: org.hibernate.community.dialect.SQLiteDialect
-    # 완성 후 여기부터 아래 끝까지 주석
-    defer-datasource-initialization: true
-  sql:
-    init:
-      mode: always
+
+##     완성 후 여기부터 아래 끝까지 주석
+#    defer-datasource-initialization: false
+#  sql:
+#    init:
+#      mode: always
